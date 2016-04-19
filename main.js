@@ -42,9 +42,9 @@ $(function() {
         var result = [];
         var $div = $('<div>').addClass('oneDetail');
         var $companyName = $('<h3>').text(`${data.Name}`);
-        var $high = $('<p>').text(`${data.High}`);
-        var $low = $('<p>').text(`${data.Low}`);
-        var $change = $('<p>').text(`${data.Change}`);
+        var $high = $('<h4>').text(`High: ${data.High}`);
+        var $low = $('<h4>').text(`Low: ${data.Low}`);
+        var $change = $('<h4>').text(`Change:  ${data.Change}`);
         $div.append($companyName, $high, $low, $change);
         result.push($div);
         $('.detailed').empty().append(result);
