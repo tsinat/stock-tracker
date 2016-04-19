@@ -1,98 +1,214 @@
+
 .container {
+    overflow:scroll;
     width: 100%;
-    height:auto;
+    height: auto;
     border-color: #grey;
     background-color: #95a5a6;
 }
-.searchDiv{
-    text-align:center;
-    padding-top:40px;
+.searchDiv {
+    text-align: center;
+    padding-top: 40px;
     border-bottom: 5px solid grey;
-    padding-bottom:20px;
-
+    padding-bottom: 20px;
 }
-.searchInput{
+.searchInput {
     border: 2px solid grey;
     border-radius: 5px;
-    padding:5px;
-    padding-left:10px;
-    font-size:1.2em;
-    height:50px;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 1.2em;
+    height: 50px;
     width: 300px;
 }
-.searchResult{
-    margin-top:40px;
+.searchResult {
+    margin-top: 40px;
     width: 100%;
     height: 800px;
-    float:left;
-    border:2px solid blck;
+    float: left;
+    border: 2px solid blck;
 }
-
- .searchButton{
-    font-size:1.5em;
-    height:50px;
-    width:100px;
+.searchButton {
+    font-size: 1.5em;
+    height: 50px;
+    width: 100px;
     border-radius: 5px;
 }
-.parentContainer{
-    margin:0 auto;
+.parentContainer {
+    margin: 5px;
+    background-color:skyblue;
     display: inline-bock;
-    border: 1px solid black;
-    padding:0 10px;
+    padding:20px 40px;
 }
-.stored{
-    padding:20px;
-    margin-top:60px;
+.stored {
+    padding: 20px;
+    margin-top: 60px;
     /*border: 2px solid red;*/
-    width:100%;
-    height:auto;
-    background-color:grey;
-}
-.storedContainer{
-    color:#252525;
-    font-size:1.2em;
-    padding:10px;
-    border-radius:10px;
-    margin:5px;
-    background-color:#1abc9c;
-    position:relative;
-}
-.delete{
-    position:relative;
-    bottom:110px;
-    left:420px;
-}
-.detailed{
-    padding:10px;
+    width: 100%;
     min-height: 200px;
-    margin:5px;
-    width:100%;
-    background-color:silver;
+    background-color: grey;
+}
+.storedContainer {
+    margin-top:0;
+    color: #252525;
+    font-size: 1.2em;
+    padding: 10px;
+    min-height: 150px;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #1abc9c;
+    position: relative;
+}
+.tracked{
+    text-align:center;
+}
+.delete {
+    position: relative;
+    bottom: 40%;
+    left: 70%;
 }
 .detailed {
-    text-align:center;
+    padding: 10px;
+    min-height: 200px;
+
+    margin-top:60px;
+    width: 100%;
+    background-color: silver;
 }
-.right{
-    margin-right:20px;
-    width:38%;
+.detailed {
+    text-align: center;
+}
+.right {
+    margin-right: 20px;
+    width: 100%;
     min-height: 800px;
-    height:auto;
+    height: auto;
     /*background-color: red;*/
-    float:right;
+    float: right;
 }
-.left{
-    margin-left:20px;
-    width:55%;
-    height:800px;
+.left {
+    margin-left: 20px;
+    width: 100%;
+    height: 800px;
     /*background-color: blue;*/
-    float:left;
+    float: left;
 }
-.oneDetail{
-    padding:5px;
+.oneDetail {
+    padding: 5px;
     border-radius: 5px;
-    background-color:#3498db;
     padding-left: 30px;
 }
-.oneDetail h3{
-    text-align:center;
+.oneDetail h3 {
+    text-align: center;
+}
+
+@media only screen and (min-width :768px){
+
+    .container {
+        width: 100%;
+        overflow:scroll;
+        height: auto;
+        border-color: #grey;
+        background-color: #95a5a6;
+    }
+    .searchDiv {
+        text-align: center;
+        padding-top: 40px;
+        border-bottom: 5px solid grey;
+        padding-bottom: 20px;
+    }
+    .searchInput {
+        border: 2px solid grey;
+        border-radius: 5px;
+        padding: 5px;
+        padding-left: 10px;
+        font-size: 1.2em;
+        height: 50px;
+        width: 300px;
+    }
+    .searchResult {
+        margin-top: 40px;
+        width: 100%;
+        height: 800px;
+        float: left;
+        border: 2px solid blck;
+    }
+    .searchButton {
+        font-size: 1.5em;
+        height: 50px;
+        width: 100px;
+        border-radius: 5px;
+    }
+    .parentContainer {
+        margin: 5px;
+        background-color:skyblue;
+        display: inline-bock;
+        padding:20px 40px;
+    }
+    .storedTitle{
+        padding-bottom:0;
+        margin-bottom:0;
+    }
+    .stored {
+        padding: 20px;
+        /*margin-top: 60px;*/
+        /*border: 2px solid red;*/
+        width: 100%;
+        min-height: 200px;
+        background-color: grey;
+    }
+    .storedContainer {
+        margin-top:0;
+        color: #252525;
+        font-size: 1.2em;
+        padding: 10px;
+        min-height: 150px;
+        border-radius: 10px;
+        margin: 5px;
+        background-color: #1abc9c;
+        position: relative;
+    }
+    .tracked{
+        text-align:center;
+    }
+    .delete {
+        position: relative;
+        bottom: 40%;
+        left: 80%;
+    }
+    .detailed {
+        text-align:left;
+        padding: 10px;
+        min-height: 200px;
+        margin-top:60px;
+        width: 100%;
+        background-color: silver;
+    }
+    .detailed h3 {
+        text-align: center;
+    }
+    .right {
+        margin-right: 20px;
+        width: 38%;
+        min-height: 800px;
+        height: auto;
+        /*background-color: red;*/
+        float: right;
+    }
+    .left {
+        margin-left: 20px;
+        width: 55%;
+        height: 800px;
+        /*background-color: blue;*/
+        float: left;
+    }
+    .oneDetail {
+        padding: 5px;
+        border-radius: 5px;
+        padding-left: 30px;
+    }
+    .oneDetail h3 {
+        text-align: center;
+    }
+
 }

@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>AJAX API</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script  src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-    <script src = 'main.js'></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src='main.js'></script>
 </head>
+
 <body>
     <div class="container">
         <div class="searchDiv row">
             <form class='form col-sx-12'>
-                <input type="text" class="searchInput" placeholder = 'Key of the Stock'>
-                <button type="submit" class = 'searchButton btn-success'>Search</button>
+                <input type="text" class="searchInput" placeholder='Search symbol'>
+                <button type="submit" class='searchButton btn-success'>Search</button>
             </form>
         </div>
-        <div class="left col-sx-6">
+        <div class="left col-sx-12 col-md-6 col-md-6">
+            <h2>Your Search Result:</h2>
             <div class="searchResult">
 
             </div>
         </div>
-        <div class="right col-sx-6">
+        <div class="right col-sx-12 col-md-6 col-md-6">
             <div class="detailed">
                 <h1>Details</h1>
                 <p>Click the company name below to see the details</p>
             </div>
+            <h3 class ="storedTitle">Tracked Stocks</h3>
             <div class="stored">
-                <h1>Tracked Stocks</h1>
+
+
             </div>
         </div>
-
-        <!-- <div class="body row">
-            <div class="searchResult">
-
-            </div>
-            <div class="col-sx-6 right">
-                <div class="stored row">
-
-                </div>
-                <div class="detailed row">
-
-                </div>
-            </div>
-        </div> -->
-
     </div>
 
 </body>
+
 </html>
